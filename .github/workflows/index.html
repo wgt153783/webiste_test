@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="robots.txt" content="noindex,nofllow" />
+  <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no" />
+  <title>welcome to 欢迎光临</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="app.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- <script type="text/javascript" src="js/flexible.js"></script> -->
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script>
+      $(function() {
+          var u = navigator.userAgent;
+          var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+          var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+          if (isiOS) {
+              $('.android').remove();
+          } else {
+              $('.ios').remove();
+          }
+
+          $('.main .navi > li:first > a').click(function() {
+              $(this).next('.jsBox').toggle();
+              return false;
+          });
+          //		var str1 = 'https';
+          //	var str2 = '://www';
+          //	var protGroup = ['9900', '5569', '6899', '7730', '8866'];
+          //	var dateTime = new Date();
+          //	var month = dateTime.getMonth();
+          //	var year = dateTime.getFullYear();
+          //	var hours = dateTime.getHours();
+          //	var days = dateTime.getDate();
+          //	var numm = hours+1;
+          //	var timeNums = [hours*numm , days*numm, month*numm, hours*numm];
+          //	var newTimeNums = String(timeNums.join(''));
+          //
+          //	$('.ulList a').click(function(){
+          //		const urlGroup = [
+          //			'www.2170880.com',
+          //			'www.2170880.com',
+          //			'www.0880659.com',
+          //			'www.0880659.com',
+          //			'www.0880659.com'];
+          //		let url = urlGroup[Math.floor(Math.random()*urlGroup.length)];
+          //		let port = protGroup[Math.floor(Math.random()*protGroup.length)];
+          //		$(this).attr('href',str1+str2+newTimeNums+'.'+url+':'+port);
+          //	});
+          //	$('.navi.clearfix li:nth-child(3) a').click(function(){
+          //		const urlGroup = [
+          //			'www.2170880.com',
+          //			'www.2170880.com',
+          //			'www.2170880.com',
+          //			'www.0880659.com',
+          //			'www.0880659.com'];
+          //		let url = urlGroup[Math.floor(Math.random()*urlGroup.length)];
+          //		let port = protGroup[Math.floor(Math.random()*protGroup.length)];
+          //		$(this).attr('href',str1+str2+newTimeNums+'.'+url+':'+port);
+          //	});
+          //		$('.navi.clearfix li:nth-child(4) a').click(function(){
+          //		const urlGroup = [
+          //			'www.2170880.com',
+          //			'www.2170880.com',
+          //			'www.2170880.com',
+          //			'www.0880659.com',
+          //			'www.0880659.com'];
+          //		let url = urlGroup[Math.floor(Math.random()*urlGroup.length)];
+          //		let port = protGroup[Math.floor(Math.random()*protGroup.length)];
+          //		$(this).attr('href',str1+str2+newTimeNums+'.'+url+':'+port);
+          //	});
+          //		$('.navi.clearfix li:nth-child(5) a').click(function(){
+          //		const urlGroup = [
+          //			'www.2170880.com',
+          //			'www.2170880.com',
+          //			'www.2170880.com',
+          //			'www.0880659.com',
+          //			'www.0880659.com'];
+          //		let url = urlGroup[Math.floor(Math.random()*urlGroup.length)];
+          //		let port = protGroup[Math.floor(Math.random()*protGroup.length)];
+          //		$(this).attr('href',str1+str2+newTimeNums+'.'+url+':'+port);
+          //	});
+          // var autourl = new Array();
+          /*随机网站 填写处*/
+          // autourl[0] = "www.2170880.com";
+          // autourl[1] = "www.2170880.com";
+          // autourl[2] = "www.2170880.com";
+          // autourl[3] = "www.0880659.com";
+          // autourl[4] = "www.0880659.com";
+
+
+          window.addEventListener("load", function() {
+              //    var isApp = /(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent);
+              //    var form = isApp ? 'autof' : 'autofs';
+              //   var clickUrl = isApp ? 'click_url_app_' : 'click_url_';
+
+              // var dfd = $.Deferred();
+
+              // getClientInfo().then(function(clientInfo) {
+              //     HostUtils.getHost("/api/hostnames", clientInfo)
+              //         .then(function(hosts) {
+              //             if (!hosts) {
+              //                 return dfd.resolve(autourl);
+              //             }
+
+              //             var len = autourl.length;
+              //             var hostLen = hosts.length;
+              //             var domLen = document.getElementsByClassName("thcom").length;
+
+              //             for (var i = 0; i < domLen - hostLen; i++) {
+              //                 var pickedHost =
+              //                     autourl[Math.floor(Math.random() * autourl.length)];
+              //                 hosts.push(pickedHost);
+
+              //                 hosts = hosts.filter(function(element, index, arr) {
+              //                     if (arr.indexOf(element) !== index) {
+              //                         --i;
+              //                     }
+              //                     return arr.indexOf(element) === index;
+              //                 });
+              //             }
+
+              //             return dfd.resolve(hosts);
+              //         })
+              //         .then(function(hosts) {
+              //             console.log(hosts);
+              //             hosts.sort(() => Math.random() - 0.5);
+
+              //             var b = 1;
+              //             var encodedHosts = HostUtils.encodeHosts(hosts, {
+              //                 no_www: true
+              //             });
+
+              //             HostUtils.testResponseTime(
+              //                 encodedHosts,
+              //                 function({
+              //                     host,
+              //                     time
+              //                 }) {
+              //                     var hostname = new URL(host).hostname;
+              //                     var parts = hostname.split(".");
+              //                     var partLen = parts.length;
+
+              //                     if (partLen > 2) {
+              //                         hostname = parts[partLen - 2] + "." + parts[partLen - 1];
+              //                     }
+
+              //                     const timeValue = time > 200 ? "超时" : time + "ms";
+
+              //                     // document.forms[form]["url" + b].value = 'https://' + hostname;
+              //                     document.getElementById("click_url_" + b).href = host;
+              //                     document.getElementById("url" + b).textContent =
+              //                         "https://" + hostname;
+              //                     // document.forms[form]["txt" + b].value = timeValue;
+
+              //                     b++;
+              //                 }
+              //             );
+              //         });
+              // });
+          });
+
+
+      });
+  </script>
+</head>
+
+<body>
+
+  <!-- 右懸浮客服 -->
+  <!-- <div id="service-menu">
+    <a href="http://kf.kmwrfyn.cn" target="_blank">
+      <img src="images/service.png" alt="">
+    </a>
+  </div> -->
+
+  <div id="container">
+    <div class="header"></div>
+    <!-- 公告 -->
+    <div id="newSection" class="newSection">
+      <div class="newsBox clearfix">
+        <dl>
+          <dt class="newsbg"><img src="images/news_bg.png" alt="">最新公告</dt>
+          <dd class="bd">
+            <ul class="infoList">
+                <li><p>❤️尊敬的澳门新葡京会员您好，由于中国大陆银行，支付宝、微信等多通道风控加强，充值渠道风控严重，为不影响您的娱乐，强烈推荐使用： ❤️ USDT数字货币/电子钱包进行充值 ❤️（零风险 -无风控）</p></li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="main">
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="images/437logo.png" alt="">
+      </div>
+
+      <!-- 輪播 -->
+      <div class="swiper swiper-container my_container">
+
+        <div class="swiper-wrapper">
+          <div class="photo swiper-slide" style="height: 70%; margin-top: 4vh;">
+            <img src="images/main01.png" alt="">
+          </div>
+          <div class="photo swiper-slide">
+            <img src="images/main02+bullet.png" alt="">
+          </div>
+          <div class="photo swiper-slide">
+            <img src="images/main03+bullet.png" alt="">
+          </div>
+          <div class="photo swiper-slide" style="height: 92%;">
+            <img src="images/main04+bullet.png" alt="">
+          </div>
+          <div class="photo swiper-slide">
+            <img src="images/main05+bullet.png" alt="">
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        
+      </div>
+
+      <!-- 選單 -->
+      <ul class="navi">
+          <li>
+            <a href="index.html">
+              <img src="images/menu01.png" alt="">
+            </a>
+            <!-- 進入官網 子選單 -->
+            <div class="jsBox"><img class="arrow" src="images/arrow.png" alt="">
+                <ul class="ulList">
+                    <li><span class="ms" id="lineMs0">检测中</span><img src="images/icon.png" alt=""><span id="url1" class="url"></span><a id="click_url_1" class="thcom"  target="_blank">立即进入</a></li>
+                    <li><span class="ms" id="lineMs1">检测中</span><img src="images/icon.png" alt=""><span id="url2" class="url"></span><a id="click_url_2" class="thcom"  target="_blank">立即进入</a></li>
+                    <li><span class="ms" id="lineMs2">检测中</span><img src="images/icon.png" alt=""><span id="url3" class="url">https://08806688.com</span><a id="click_url_3" class="thcom"  target="_blank">立即进入</a></li>
+                    <li><span class="ms" id="lineMs3">检测中</span><img src="images/icon.png" alt=""><span id="url4" class="url">https://2170880.com</span><a id="click_url_4" class="thcom"  target="_blank">立即进入</a></li>
+                    <li><span class="ms" id="lineMs4">检测中</span><img src="images/icon.png" alt=""><span id="url5" class="url">https://2170880.com</span><a id="click_url_5" class="thcom"  target="_blank">立即进入</a></li>
+                </ul>
+            </div>
+          </li>
+
+          <!-- <li>
+            <a href="https://www.2170880.com/" target="_blank">
+              <img src="images/menu02.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.0880659.com:9900/ub/" target="_blank">
+              <img src="images/menu03.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="http://437zs.kmwrfyn.cn" target="_blank" class="vip">
+              <img src="images/menu04.png" alt="">
+            </a>
+          </li> -->
+          
+          <li>
+            <a href="https://app0880.com/" target="_blank">
+              <img src="images/menu02.png" alt="">
+            </a>
+          </li>
+
+          <li>
+            <a href="http://kf.kmwrfyn.cn" target="_blank">
+              <img src="images/menu03.png" alt="">
+            </a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <script type="text/javascript" src="js/ms.js"></script>
+  <script type="text/javascript" src="js/host_utils.js"></script>
+  <script type="text/javascript" src="js/elastic-apm-rum.umd.min.js"></script>
+  <script type="text/javascript" src="js/init_rum.js"></script>
+  
+  <script>
+    var autourl = [
+      'www.2170880.com',
+      'www.0880659.com',
+    ];
+
+    // 取得 client 端 ip & id
+    function getClientInfo() {
+      var dfd = $.Deferred();
+      $.ajax({
+        url: "https://get.airegioncare.com:9988/api/get_ip",
+        method: "GET",
+        timeout: 5000,
+        async: true,
+      })
+        .success(function (data) {
+          dfd.resolve(data);
+        })
+        .error(function () {
+          dfd.resolve({});
+        });
+      return dfd.promise();
+    }
+
+    window.addEventListener("load", function () {
+      //    var isApp = /(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent);
+      //    var form = isApp ? 'autof' : 'autofs';
+      //   var clickUrl = isApp ? 'click_url_app_' : 'click_url_';
+
+      var dfd = $.Deferred();
+
+      getClientInfo().then(function (clientInfo) {
+        HostUtils.getHost("/api/hostnames", clientInfo)
+          .then(function (hosts) {
+            if (!hosts) {
+              return dfd.resolve(autourl);
+            }
+
+            var len = autourl.length;
+            var hostLen = hosts.length;
+            var domLen = document.getElementsByClassName("thcom").length;
+            var restop = 0;
+
+            for (var i = 0; i < domLen - hostLen; i++) {
+              var pickedHost =
+                autourl[Math.floor(Math.random() * autourl.length)];
+              hosts.push(pickedHost);
+
+              hosts = hosts.filter(function (element, index, arr) {
+                if (restop > 100) {
+                  return arr.indexOf(element) === index
+                }
+                if (arr.indexOf(element) !== index) {
+                  --i;
+                }
+                restop++;
+                return arr.indexOf(element) === index;
+              });
+
+            }
+
+            return dfd.resolve(hosts);
+          })
+          .then(function (hosts) {
+            console.log(hosts);
+
+            var b = 1;
+            var encodedHosts = HostUtils.encodeHosts(hosts, { no_www: true });
+
+            HostUtils.testResponseTime(
+              encodedHosts,
+              function ({ host, time }) {
+                var hostname = new URL(host).hostname;
+                var parts = hostname.split(".");
+                var partLen = parts.length;
+
+                if (partLen > 2) {
+                  hostname = parts[partLen - 2] + "." + parts[partLen - 1];
+                }
+
+                const timeValue = time > 200 ? "超时" : time + "ms";
+
+                // document.forms[form]["url" + b].value = 'https://' + hostname;
+                document.getElementById("click_url_" + b).href = host;
+                document.getElementById("url" + b).textContent =
+                  "https://" + hostname;
+                // document.forms[form]["txt" + b].value = timeValue;
+
+                b++;
+              }
+            );
+          });
+      });
+    });
+  </script>
+
+  <!-- swiper -->
+  <script src="js/swiper-bundle.min.js"></script>
+  
+  <script>
+    var swiper = new Swiper(".my_container", {
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+
+</html>
